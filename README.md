@@ -5,31 +5,82 @@
 [![Schulstufe](https://img.shields.io/badge/schulstufe-Sek%20I-4c8c4a.svg)]()
 [![Fokus](https://img.shields.io/badge/fokus-KI%20%2F%20Medienbildung%20%2F%20Informatik-7a39bb.svg)]()
 
-Dieses Repository bündelt Materialien zu **Teachable Machine** für den Unterricht in der **Sekundarstufe I in Baden-Württemberg** mit Bezug auf den **Bildungsplan 2016**.
+Dieses Repository bündelt Materialien zu **Teachable Machine** für den Unterricht in der **Sekundarstufe I in Baden-Württemberg** mit Bezug auf den **Bildungsplan 2016**.  
+Der Fokus liegt auf einem schnellen Einstieg, klaren Unterrichtsmaterialien und einer direkt nutzbaren GitHub-Pages-Struktur.
 
-![Logo](assets/logo.svg)
+![Logo Teachable Machine](logo_TM.png)
 
-## Inhalte
+## Ziel des Repositories
 
+Dieses Projekt unterstützt Lehrkräfte dabei, KI-Themen niedrigschwellig in den Unterricht zu integrieren:
+
+- praxisnaher Einstieg in maschinelles Lernen ohne Programmierhürde
+- klare Trennung zwischen Material für Lehrkräfte und Schüler:innen
+- sofort einsatzfähige Struktur für Unterricht, Präsentation und Dokumentation
+- gute Basis für OER-Nutzung und Weiterentwicklung
+
+## Schnellstart
+
+1. Repository klonen oder als ZIP herunterladen.
+2. Lokalen Server starten:
+
+   ```bash
+   python -m http.server 8000
+   ```
+
+3. Im Browser öffnen: `http://localhost:8000/`
+4. Startseite nutzen (`index.html`) und passende Materialien in `docs/` auswählen.
+
+## Repository-Struktur (Dateiübersicht)
+
+### Root
+
+- `README.md` – Projektüberblick, Einstieg und Struktur
+- `INSTALL.md` – technische Einrichtung, lokales Testen und Pages-Hinweise
 - `index.html` – moderne Startseite für GitHub Pages
-- `INSTALL.md` – technische Einrichtung und Schnellstart
-- `docs/teacher_guide.md` – Anleitung für Lehrkräfte
-- `docs/student_guide.md` – Anleitung für Schüler:innen
-- `docs/lesson_plan.md` – allgemein formuliertes UVP für Sek I
-- `examples/` – Platzhalterstruktur für Beispielprojekte
-- `assets/` – Logo und Medien
+- `index.md` – kompakte Markdown-Startseite mit Materiallinks
+- `logo_TM.png` – primäres Projektlogo (im README eingebunden)
+- `LICENSE` – Lizenzinformationen
 
-## GitHub Pages
+### Ordner
+
+- `docs/` – didaktische Kernmaterialien
+  - `teacher_guide.md` – Leitfaden für Lehrkräfte
+  - `student_guide.md` – Arbeitsanleitung für Schüler:innen
+  - `lesson_plan.md` – allgemein formuliertes Unterrichtsvorhaben (Sek I)
+- `examples/` – Platzhalter für konkrete Modell-/Projektbeispiele
+  - `image-project/README.md` – Hinweise für Bildmodell-Beispiele
+  - `audio-project/README.md` – Hinweise für Audiomodell-Beispiele
+  - `pose-project/README.md` – Hinweise für Pose-Modell-Beispiele
+- `assets/` – zusätzliche Medien/Assets (z. B. `logo.svg`)
+
+## So arbeitest du mit den Materialien
+
+1. **Planung:** `docs/teacher_guide.md` als didaktische Grundlage lesen.
+2. **Durchführung:** `docs/student_guide.md` als Lernpfad für die Klasse einsetzen.
+3. **Unterrichtsrahmen:** `docs/lesson_plan.md` für Sequenzplanung und Kompetenzbezug nutzen.
+4. **Praxisbeispiele:** Eigene Modell-Exports in `examples/` ablegen und dokumentieren.
+
+## Teachable-Machine-Modelle einbinden
+
+- Modelle in Teachable Machine trainieren und exportieren.
+- Exportdateien projektbezogen in einen Unterordner von `examples/` legen.
+- Eine eigene Testseite erstellen oder bestehende Seiten erweitern, um das Modell im Browser zu demonstrieren.
+
+## GitHub Pages veröffentlichen
 
 Empfohlene Variante:
 
-1. Repository auf GitHub anlegen.
-2. Dateien hochladen.
-3. In **Settings → Pages** als Quelle den Branch `main` und das Root-Verzeichnis `/ (root)` auswählen.
-4. `index.html` wird automatisch als Startseite verwendet.
+1. Repository auf GitHub öffnen.
+2. **Settings → Pages** aufrufen.
+3. Quelle **Deploy from a branch** wählen.
+4. Branch `main` und Ordner `/ (root)` auswählen.
+5. Speichern – `index.html` wird als Startseite ausgeliefert.
 
-Alternativ kann auch der Ordner `docs/` als Veröffentlichungsquelle genutzt werden, wenn die Seitenstruktur später dorthin verlagert wird.
+Optional: Bei späterer Umstrukturierung kann auch `docs/` als Veröffentlichungsquelle genutzt werden.
 
-## Hinweise
+## Hinweise für den Unterricht
 
-Die Seite und die Materialien sind so aufgebaut, dass sie direkt als schulische Materialsammlung, als Projektdokumentation oder als Grundlage für ein OER-Repo weiterverwendet werden können.
+- Für den Start reichen Browser, Internetzugang und Webcam (optional Mikrofon).
+- Sinnvolle Schwerpunkte: Datenqualität, Modellgrenzen, Fehlklassifikationen, Bias/Fairness.
+- Das Repo kann als Materialsammlung, Projektdokumentation oder Ausgangspunkt für eine schulische OER-Instanz genutzt werden.
