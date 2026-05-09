@@ -67,17 +67,6 @@ Dieses Projekt unterstützt Lehrkräfte dabei, KI-Themen niedrigschwellig in den
 - Exportdateien projektbezogen in einen Unterordner von `examples/` legen.
 - Eine eigene Testseite erstellen oder bestehende Seiten erweitern, um das Modell im Browser zu demonstrieren.
 
-## GitHub Pages veröffentlichen
-
-Empfohlene Variante:
-
-1. Repository auf GitHub öffnen.
-2. **Settings → Pages** aufrufen.
-3. Quelle **Deploy from a branch** wählen.
-4. Branch `main` und Ordner `/ (root)` auswählen.
-5. Speichern – `index.html` wird als Startseite ausgeliefert.
-
-Optional: Bei späterer Umstrukturierung kann auch `docs/` als Veröffentlichungsquelle genutzt werden.
 
 ## Hinweise für den Unterricht
 
