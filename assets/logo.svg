@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Teachable Machine BW Logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#01696f"/>
+      <stop offset="100%" stop-color="#4f98a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#f4f2ed"/>
+  <rect x="38" y="42" width="72" height="72" rx="18" fill="url(#g)" opacity="0.18" stroke="#01696f" stroke-width="8"/>
+  <rect x="146" y="42" width="72" height="72" rx="18" fill="url(#g)" opacity="0.18" stroke="#01696f" stroke-width="8"/>
+  <rect x="92" y="142" width="72" height="72" rx="18" fill="url(#g)" opacity="0.18" stroke="#01696f" stroke-width="8"/>
+  <path d="M110 78h36M128 96v24" stroke="#01696f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M74 172c26 20 82 20 108 0" stroke="#d19900" stroke-width="10" stroke-linecap="round"/>
+</svg>
